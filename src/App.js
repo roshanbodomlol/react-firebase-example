@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import PrivateRoute from './components/PrivateRoute';
+import Header from './components/__elements/Header';
+import Footer from './components/__elements/Footer';
+import Home from './components/__screens/Home';
+import SignIn from './components/__screens/SignIn';
+import NotFound from './components/__screens/NotFound';
+import Profile from './components/__screens/__Secure/Profile';
+import sitemap from './routing/sitemap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="wrapper">
+      <Header/>
+
+      <main>
+        <Switch>
+          <Route exact path={sitemap.home} component={Home}/>
+          <Route exact path={sitemap.signIn} component={SignIn}/>
+          <Route exact path={sitemap.notFound} component={NotFound}/>
+          <PrivateRoute>
+            <Route exact path={sitemap.profile} component={Profile}/>
+          </PrivateRoute>
+          <Redirect to={sitemap.notFound}/>
+        </Switch>
+      </main>
+
+      <Footer/>
     </div>
   );
 }

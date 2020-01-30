@@ -1,0 +1,52 @@
+@import "../../../styles/vars";
+
+#sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: $red;
+  color: $white;
+  padding: 45px 0;
+
+  .cards {
+    margin-top: 45px;
+    background: $white;
+    
+    .block {
+      padding: 120px 45px;
+      color: $black;
+      height: 100%;
+      justify-content: flex-start;
+
+      .block-title {
+        font-family: $fontSpecial;
+        letter-spacing: normal;
+        text-transform: capitalize;
+        font-size: 2em;
+        line-height: 1.1;
+      }
+
+      .block-icon-title {
+        margin-bottom: 9px;
+      }
+
+      .block-content {
+        
+        .button {
+          margin-top: 30px;
+        }
+      }
+
+      &.--purple {
+        background: $purple;
+        color: $white;
+
+        .block-icon-title {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../../styles/vars";
+
+#footer-wrapper {
+  background: $ash;
+  padding: 30px 0;
+  color: $white;
+
+  .footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    span {
+      letter-spacing: 1px;
+    }
+  }
+
+  .email-input {
+
+    input {
+      background: $black;
+      border-radius: 35px;
+      border: 1px solid $white;
+      padding: 9px;
+      text-align: center;
+      width: 300px;
+    }
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  @media all and (max-width: 769px) {
+    text-align: center;
+
+    .footer-text, .footer-logo {
+      margin-bottom: 30px;
+    }
+  }
+}

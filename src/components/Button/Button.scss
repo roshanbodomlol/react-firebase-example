@@ -1,0 +1,53 @@
+@import "../../styles/vars";
+
+.button {
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-family: $fontRegular;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  border-radius: 40px;
+  border: none;
+  padding: 15px 35px;
+  font-size: 14px;
+  color: $black;
+
+  &.--medium {
+    padding: 9px 18px;
+    font-size: 12px;
+  }
+
+  &.primary {
+    background-color: $yellow;
+
+    &:hover {
+      box-shadow: 0 0 9px 0px transparentize($black, 0.8);
+      transition: box-shadow .3s ease;
+    }
+  }
+
+  &.link {
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &.transparent {
+    color: $white;
+    border: 1px solid transparentize($white, 0.6);
+    background-color: transparent;
+
+    &:hover {
+      border-color: $white;
+    }
+
+    &.link {
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

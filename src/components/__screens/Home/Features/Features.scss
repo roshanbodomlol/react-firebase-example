@@ -1,0 +1,24 @@
+#features {
+  background: url('../../../../assets/images/circle-back-dark.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 45px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+
+  .screen-title {
+    margin-bottom: 60px;
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+
+  .block {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../styles/vars";
+
+.block {
+
+  &.--basic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    text-align: center;
+
+    .block-icon {
+      background: transparentize($black, 0.5);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .block-title {
+      letter-spacing: 9px;
+      word-spacing: 9px;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+    }
+
+    .block-icon-title {
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    .block-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

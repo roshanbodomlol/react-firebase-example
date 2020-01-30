@@ -1,0 +1,54 @@
+@import "../../../../styles/vars";
+
+#options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 14px;
+  padding: 45px 0;
+
+  .screen-title {
+    color: $black;
+  }
+
+  .cards {
+    border: 1px solid $gray;
+    margin-top: 45px;
+    
+    .block {
+      padding: 120px 45px;
+      color: $black;
+      height: 100%;
+
+      .block-title {
+        font-family: $fontSpecial;
+        letter-spacing: normal;
+        text-transform: capitalize;
+        font-size: 2em;
+        line-height: 1.1;
+      }
+
+      .block-icon-title {
+        margin-bottom: 9px;
+      }
+
+      .block-content {
+        
+        .button {
+          margin-top: 30px;
+        }
+      }
+
+      &.--purple {
+        background: $purple;
+        color: $white;
+
+        .block-icon-title {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
