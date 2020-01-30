@@ -1,3 +1,10 @@
+## React Redux Firebase Example
+A simple app to showcase React, Redux and user authentication with firebase.
+
+Demo - [http://react-firebase.wearemanda.com/](http://react-firebase.wearemanda.com/)
+
+UI from - [https://www.ls.graphics/free/ui-kit-landing-page](https://www.ls.graphics/free/ui-kit-landing-page)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
